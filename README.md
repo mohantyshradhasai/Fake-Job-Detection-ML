@@ -61,7 +61,7 @@ Fake-Job-Detection-ML/
 │── main.py              # Model training and execution
 │── requirements.txt     # Dependencies
 │── README.md            # Documentation
----
+
 
 ## 📊 Results
 - Achieved strong performance on test data  
