@@ -56,11 +56,11 @@ The model analyzes multiple job-related features such as **job title, descriptio
 ---
 ## 📂 Project Structure
          Fake-Job-Detection-ML/
-├── data/ # Dataset files
-├── notebook.ipynb # EDA and experimentation
-├── main.py # Model training and execution
-├── requirements.txt # Dependencies
-└── README.md # Documentation
+         ├── data/ # Dataset files
+         ├── notebook.ipynb # EDA and experimentation
+         ├── main.py # Model training and execution
+         ├── requirements.txt # Dependencies
+         └── README.md # Documentation
 ---
 ## 📊 Results
 - Achieved strong performance on test data  
