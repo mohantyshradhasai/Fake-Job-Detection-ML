@@ -1,118 +1,95 @@
-Fake Job Detection using LSTM
+# 🛡️ Fake Job Detection using LSTM
 
-Overview
-This project focuses on detecting fraudulent job postings using Natural Language Processing (NLP) and a Deep Learning model (LSTM).  
-The model analyzes job-related information such as title, description, company profile, location, and salary to classify whether a job is real or fake.
+## 📌 Overview
+With the rapid growth of online job platforms, fraudulent job postings have become a serious concern.  
+This project aims to detect fake job listings using **Natural Language Processing (NLP)** and a **Deep Learning model (LSTM)**.
+
+The model analyzes multiple job-related features such as **job title, description, company profile, location, and salary** to classify whether a job posting is **Real** or **Fake**.
 
 ---
 
-Features
-- Combined multiple text features:
+## 🚀 Features
+- Combines multiple job attributes into a single input:
   - Job Title  
   - Job Description  
   - Company Profile  
   - Location  
   - Salary Range  
-- Text preprocessing:
+- Text preprocessing pipeline:
   - Lowercasing  
   - Removing special characters  
+  - Cleaning extra spaces  
 - Exploratory Data Analysis (EDA) using Seaborn  
-- Deep Learning model (LSTM) for classification  
+- Deep Learning-based classification using LSTM  
+- Evaluation using multiple performance metrics  
 
 ---
 
-Approach
+## 🧠 Methodology
 
- 1. Data Preprocessing
-- Selected relevant columns  
-- Handled missing values using fillna("")  
-- Combined multiple columns into one text feature  
+### 🔹 1. Data Preprocessing
+- Selected relevant columns from dataset  
+- Handled missing values using `fillna("")`  
+- Merged multiple text fields into one feature  
 
- 2. Text Cleaning
+### 🔹 2. Text Cleaning
 - Converted text to lowercase  
-- Removed special characters  
-- Removed extra spaces  
+- Removed special characters and noise  
+- Standardized spacing  
 
- 3. Feature Engineering
-- Created a single text column from multiple features  
-- Preserved important information like salary and location  
+### 🔹 3. Feature Engineering
+- Combined all important job-related features into a single text column  
+- Preserved contextual information like salary and location  
 
- 4. Model Training (LSTM)
-- Tokenized text data  
-- Applied padding for equal sequence length  
-- Built and trained an LSTM model for classification  
+### 🔹 4. Model Building (LSTM)
+- Tokenized textual data  
+- Applied sequence padding for uniform input length  
+- Built and trained an **LSTM (Long Short-Term Memory)** model for classification  
 
- 5. Evaluation
-- Accuracy, Precision, Recall, F1-score  
+### 🔹 5. Model Evaluation
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
 - Confusion Matrix  
 
 ---
-
-Results
-- Achieved high accuracy on test data  
-- Dataset is imbalanced (more real jobs than fake jobs)  
-- Evaluated model using multiple metrics  
-
----
-
-Exploratory Data Analysis (EDA)
-- Class distribution (real vs fake jobs) using Seaborn  
-- Text length comparison  
-- Common word patterns in fraudulent job postings  
-
----
-
-Tech Stack
-- Python  
-- Pandas, NumPy  
-- TensorFlow / Keras (LSTM)  
-- Seaborn (Visualization)  
-
----
-
-How to Run
-
-1. Clone the repository:
-git clone https://github.com/mohantyshradhasai/Fake-Job-Detection-ML.git
-
-2. Navigate to the folder:
-cd Fake-Job-Detection-ML
-
-3. Install dependencies:
-pip install -r requirements.txt
-
-4. Run the project:
-python main.py
-
----
-
-Project Structure
+## 📂 Project Structure
 Fake-Job-Detection-ML/
-│── data/
-│── notebook.ipynb / main.py
-│── requirements.txt
-│── README.md
+│── data/                # Dataset files
+│── notebook.ipynb       # EDA and experimentation
+│── main.py              # Model training and execution
+│── requirements.txt     # Dependencies
+│── README.md            # Documentation
+---
+
+## 📊 Results
+- Achieved strong performance on test data  
+- Model effectively distinguishes between real and fake job postings  
+- Dataset is **imbalanced**, with more real jobs than fake ones  
+- Used multiple metrics to ensure reliable evaluation  
 
 ---
 
-Note
-- Dataset is imbalanced  
-- Accuracy alone is not sufficient for evaluation  
+## 📈 Exploratory Data Analysis (EDA)
+- Visualized class distribution (Real vs Fake jobs)  
+- Analyzed text length variations  
+- Identified common patterns in fraudulent postings  
 
 ---
 
-Future Improvements
-- Handle imbalance using SMOTE  
-- Try advanced models like BERT  
-- Deploy as a web application  
+## 🛠️ Tech Stack
+- **Programming Language:** Python  
+- **Libraries:**  
+  - Pandas, NumPy  
+  - TensorFlow / Keras (LSTM)  
+  - Seaborn (Data Visualization)  
 
 ---
-Author
-Sai Shradha Mohanty  
 
----
+## ⚙️ Installation & Setup
 
-Acknowledgment
-This project is built to apply Machine Learning, NLP, and Deep Learning concepts to a real-world problem.
-
----
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/mohantyshradhasai/Fake-Job-Detection-ML.git
+cd Fake-Job-Detection-ML
